@@ -12,7 +12,7 @@ function HooksCakeContainer() {
      * so we access the numOfCakes from the redux state & stored it in a veriable(numOfCakes) 
      * that belongs to our react component
      */
-    const numOfCakes = useSelector(state => state.numOfCakes)
+    const numOfCakes = useSelector(state => state.cake.numOfCakes)
     /**
      * A hook to access the redux dispatch function.
      * it returns the reference to the dispatch function from the redux store

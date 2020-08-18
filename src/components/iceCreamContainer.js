@@ -1,13 +1,13 @@
 import React from 'react'
-import { buyCake } from '../redux'
+import { buyIceCream } from '../redux'
 import { connect } from 'react-redux'
 
-function CakeContainer(props) {
+function IceCreamContainer(props) {
     console.log('props: ', props);
     return(
         <div>
-            <h2>Number of cake {props.numOfCakes}</h2>
-            <button onClick={props.buyCake}>Buy Cake</button>
+            <h2>Number of ice-cream {props.numOfIceCreams}</h2>
+            <button onClick={props.buyIceCream}>Buy ice-cream</button>
         </div>
     )
 }
@@ -17,9 +17,9 @@ function CakeContainer(props) {
  * this property can be taken as aprops along with other property for this component
  */
 const mapStateToProps = state => {
-    console.log('state.numOfCakes --', state);
+    console.log('state.numOfIceCreams --', state);
     return {
-        numOfCakes: state.cake.numOfCakes
+        numOfIceCreams: state.iceCream.numOfIceCreams
     }
 }
 
@@ -29,7 +29,7 @@ const mapStateToProps = state => {
  */
 const mapDispatchToProps = dispatch => {
     return {
-        buyCake: () => dispatch(buyCake())
+        buyIceCream: () => dispatch(buyIceCream())
     }
 }
 
@@ -37,4 +37,4 @@ const mapDispatchToProps = dispatch => {
  *  connect function is use to connect our component to redux store (via these 2 functions) 
  *  for that we use the connect function or the connect higher order component from the react-redux liburary
  * */ 
-export default connect(mapStateToProps, mapDispatchToProps)(CakeContainer)
+export default connect(mapStateToProps, mapDispatchToProps)(IceCreamContainer)
