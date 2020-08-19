@@ -5,6 +5,8 @@ import CakeContainer from '../src/components/cakeContainer'
 import HooksCakeContainer from '../src/components/hooksCakeContainer'
 import IceCreamContainer from '../src/components/iceCreamContainer'
 import ItemContainer from '../src/components/itemContainer'
+import ClickCounter from '../src/components/clickCounter'
+import HoverCounter from '../src/components/hoverCounter'
 import { Provider } from'react-redux'
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
         <IceCreamContainer></IceCreamContainer>
         <ItemContainer cake></ItemContainer>
         <ItemContainer></ItemContainer>
+        <ClickCounter></ClickCounter>
+        <HoverCounter></HoverCounter>
       </div>
     </Provider>
   );
