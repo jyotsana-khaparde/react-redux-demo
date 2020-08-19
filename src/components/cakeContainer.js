@@ -35,6 +35,11 @@ const mapDispatchToProps = dispatch => {
 
 /**
  *  connect function is use to connect our component to redux store (via these 2 functions) 
- *  for that we use the connect function or the connect higher order component from the react-redux liburary
+ *  for that we use the connect function or the connect higher order component from the react-redux liburary.
+ *  The return of connect() is a wrapper function that takes your component 
+ *  and returns a wrapper component with the additional props it injects.
+ *  so we can write it as ->
+ *  Eg:- const wrapperFunction = connect(mapStateToProps, mapDispatchToProps)
+ *  export default wrapperFunction(CakeContainer)
  * */ 
 export default connect(mapStateToProps, mapDispatchToProps)(CakeContainer)

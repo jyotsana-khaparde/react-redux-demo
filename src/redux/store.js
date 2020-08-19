@@ -3,8 +3,13 @@ import rootReducer from './rootReducer'
 // logger is basically locks information related to the redux store
 import logger from 'redux-logger'
 import { composeWithDevTools } from 'redux-devtools-extension';
+/**
+ * redux-thunk will allo us to define asynchronous action creators in our application
+ * thunk allow us instead of returning a object, return function in action creators
+ *  */ 
+import thunk from 'redux-thunk'
 
-const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(logger)))
+const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(logger, thunk)))
 export default store
 
 /**
