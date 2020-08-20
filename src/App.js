@@ -7,6 +7,7 @@ import IceCreamContainer from '../src/components/iceCreamContainer'
 import ItemContainer from '../src/components/itemContainer'
 import ClickCounter from '../src/components/clickCounter'
 import HoverCounter from '../src/components/hoverCounter'
+import ParentComp from '../src/components/parentComp'
 import { Provider } from'react-redux'
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <ItemContainer></ItemContainer>
         <ClickCounter></ClickCounter>
         <HoverCounter></HoverCounter>
+        <ParentComp/>
       </div>
     </Provider>
   );
