@@ -40,7 +40,7 @@ class RefsDemo extends Component {
 export default RefsDemo
 
 /**
- * create ref method:- 
+ * create ref method:- ref can not be attached to functional components
  * FIRST WAY:-
  * 1. create ref we do it using React.createRef() <- this method (it is common to create 
  *    constructor in the component so that they can be referenced throughout the component)
