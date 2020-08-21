@@ -8,6 +8,7 @@ import ItemContainer from '../src/components/itemContainer'
 import ClickCounter from '../src/components/clickCounter'
 import HoverCounter from '../src/components/hoverCounter'
 import ParentComp from '../src/components/parentComp'
+import RefsDemo from '../src/components/refsDemo'
 import { Provider } from'react-redux'
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <ClickCounter></ClickCounter>
         <HoverCounter></HoverCounter>
         <ParentComp/>
+        <RefsDemo/>
       </div>
     </Provider>
   );
