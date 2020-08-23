@@ -10,6 +10,7 @@ import HoverCounter from '../src/components/hoverCounter'
 import ParentComp from '../src/components/parentComp'
 import RefsDemo from '../src/components/refsDemo'
 import FocusInputComponent from '../src/components/focusInput'
+import FRParentInput from '../src/components/FRParentInput'
 import { Provider } from'react-redux'
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
         <ParentComp/>
         <RefsDemo/>
         <FocusInputComponent/>
+        <FRParentInput/>
       </div>
     </Provider>
   );
